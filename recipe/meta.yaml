@@ -10,7 +10,7 @@ source:
   sha256: 3af064e2aabbee4ad7b9b5b768ae6989ac5e10f87df64a0d178447131268ab9a
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: True  # [py<36]
 
@@ -25,7 +25,7 @@ requirements:
     - h5py
     - imageio
     - imageio-ffmpeg
-    - matplotlib
+    - matplotlib-base
     - netcdf4
     - numba
     - numpy
