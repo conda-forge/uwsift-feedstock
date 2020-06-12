@@ -41,7 +41,7 @@ requirements:
     - scikit-image
     - shapely
     - sqlalchemy
-    - vispy >=0.6
+    - vispy >=0.6,<0.7
 
 test:
   imports:
