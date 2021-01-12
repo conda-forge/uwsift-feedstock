@@ -1,5 +1,5 @@
 {% set name = "uwsift" %}
-{% set version = "1.1.5" %}
+{% set version = "1.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 57f017852fc94b2e700b9ccbf32a750c8656050f5f706db0bad93697b150132b
+  sha256: d4b18c616861f65079c25c1d9a35dbd9546871e49dbfa7f174d382dcbe35b276
 
 build:
   number: 0
