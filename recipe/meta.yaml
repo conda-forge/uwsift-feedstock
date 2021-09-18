@@ -1,5 +1,5 @@
 {% set name = "uwsift" %}
-{% set version = "1.1.6" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d4b18c616861f65079c25c1d9a35dbd9546871e49dbfa7f174d382dcbe35b276
+  sha256: 08dddc058e57a90c5d90fd1fc3a2a6a945b85a6001a106557df1f9c049642968
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<36]
 
@@ -41,7 +41,7 @@ requirements:
     - scikit-image
     - shapely
     - sqlalchemy
-    - vispy >=0.6,<0.7
+    - vispy >=0.7.1
 
 test:
   imports:
