@@ -1,5 +1,5 @@
 {% set name = "uwsift" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 08dddc058e57a90c5d90fd1fc3a2a6a945b85a6001a106557df1f9c049642968
+  sha256: d52bf11e677fa8f8f97434b8b5baf49f9dc0b47b4053a410448eb6ba668006d1
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<37]
 
